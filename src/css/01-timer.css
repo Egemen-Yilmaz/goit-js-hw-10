@@ -60,7 +60,6 @@ body {
 
 /*
  * Styling for the disabled Start button
- * Matches the grayed-out look in the images
  */
 [data-start]:disabled {
     background-color: #989898; /* Disabled color */
@@ -78,7 +77,6 @@ body {
 .timer {
     display: flex;
     gap: 20px;
-    /* Optional: Center the timer values */
     justify-content: center;
 }
 
@@ -100,8 +98,8 @@ body {
     font-size: 48px; /* Large font size for values */
     font-weight: bold;
     color: #333;
-    line-height: 1; /* Adjust line height to prevent too much vertical space */
-    min-width: 60px; /* Ensures consistent width for two-digit numbers */
+    line-height: 1;
+    min-width: 60px;
     text-align: center;
 }
 
@@ -115,10 +113,7 @@ body {
     margin-top: 5px;
 }
 
-/*
- * Flatpickr Overrides (Optional but recommended for consistency)
- * You can add more specific overrides here if needed
- */
+
 .flatpickr-calendar {
     font-family: Arial, sans-serif;
 }

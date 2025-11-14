@@ -8,11 +8,11 @@ body {
     align-items: center;
     min-height: 100vh; /* Full viewport height */
     margin: 0;
-    background-color: #e0e0e0; /* Light gray background matching the image */
+    background-color: #e0e0e0;
 }
 
 /*
- * Styling for the form container (the main card/box)
+ * Styling for the form container
  */
 .form {
     background-color: white;
@@ -35,9 +35,7 @@ label {
     color: #333;
 }
 
-/*
- * Styling for the Delay input field
- */
+
 input[type="number"] {
     width: 100%;
     padding: 10px;
@@ -48,9 +46,7 @@ input[type="number"] {
     margin-top: 5px;
 }
 
-/*
- * Styling for the fieldset containing radio buttons
- */
+
 fieldset {
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -58,23 +54,19 @@ fieldset {
     margin: 0;
 }
 
-/*
- * Styling for the legend text of the fieldset
- */
+
 legend {
     font-weight: bold;
     padding: 0 5px;
     color: #333;
 }
 
-/*
- * Styling for radio button labels (to align radio button and text)
- */
+
 fieldset label {
-    display: inline-flex; /* Use inline-flex for radio buttons */
+    display: inline-flex;
     align-items: center;
     margin-right: 20px;
-    font-weight: normal; /* Labels inside fieldset can be lighter */
+    font-weight: normal;
 }
 
 /*
@@ -92,18 +84,10 @@ button[type="submit"] {
     font-weight: bold;
 }
 
-/*
- * Button hover effect
- */
 button[type="submit"]:hover {
     background-color: #6C8CFF;
 }
 
-/*
- * IziToast Styling Overrides (To ensure visual consistency)
- * The screenshot shows a successful (green) toast.
- * iziToast handles the coloring automatically based on .success or .error
- */
 .iziToast-wrapper {
     /* Ensures toast appears correctly */
     z-index: 999999;
