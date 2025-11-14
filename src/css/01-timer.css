@@ -1,0 +1,132 @@
+/*
+ * General styling for the body
+ */
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Container for the entire timer application
+ */
+ .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*
+ * Styling for the date picker and start button container
+ */
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+/*
+ * Styling for the datetime picker input field
+ */
+#datetime-picker {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 200px;
+    text-align: center;
+}
+
+/*
+ * Styling for the Start button
+ */
+[data-start] {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: #4E75FF; /* Active/Enabled color */
+    cursor: pointer;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+/*
+ * Styling for the disabled Start button
+ * Matches the grayed-out look in the images
+ */
+[data-start]:disabled {
+    background-color: #989898; /* Disabled color */
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+[data-start]:hover {
+    background-color: #6C8CFF; /* Hover color */
+}
+
+/*
+ * Container for the entire timer display
+ */
+.timer {
+    display: flex;
+    gap: 20px;
+    /* Optional: Center the timer values */
+    justify-content: center;
+}
+
+/*
+ * Styling for each time unit (Days, Hours, Minutes, Seconds)
+ */
+.field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Adding some padding/margin for separation */
+    padding: 10px;
+}
+
+/*
+ * Styling for the numeric value (00, 01, 10, etc.)
+ */
+.value {
+    font-size: 48px; /* Large font size for values */
+    font-weight: bold;
+    color: #333;
+    line-height: 1; /* Adjust line height to prevent too much vertical space */
+    min-width: 60px; /* Ensures consistent width for two-digit numbers */
+    text-align: center;
+}
+
+/*
+ * Styling for the text label (Days, Hours, etc.)
+ */
+.label {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #666;
+    margin-top: 5px;
+}
+
+/*
+ * Flatpickr Overrides (Optional but recommended for consistency)
+ * You can add more specific overrides here if needed
+ */
+.flatpickr-calendar {
+    font-family: Arial, sans-serif;
+}
+
+#datetime-picker:hover {
+    border: 1px solid black;
+}
+
+#datetime-picker:active {
+    border: 1px solid #4E75FF;
+}
