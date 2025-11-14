@@ -1,0 +1,116 @@
+/*
+ * General body styling: centers the content vertically and horizontally, 
+ * simulating the card layout shown in the screenshot.
+ */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    margin: 0;
+    background-color: #e0e0e0; /* Light gray background matching the image */
+}
+
+/*
+ * Styling for the form container (the main card/box)
+ */
+.form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 350px;
+}
+
+/*
+ * Styling for input labels
+ */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/*
+ * Styling for the Delay input field
+ */
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/*
+ * Styling for the fieldset containing radio buttons
+ */
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 0;
+}
+
+/*
+ * Styling for the legend text of the fieldset
+ */
+legend {
+    font-weight: bold;
+    padding: 0 5px;
+    color: #333;
+}
+
+/*
+ * Styling for radio button labels (to align radio button and text)
+ */
+fieldset label {
+    display: inline-flex; /* Use inline-flex for radio buttons */
+    align-items: center;
+    margin-right: 20px;
+    font-weight: normal; /* Labels inside fieldset can be lighter */
+}
+
+/*
+ * Styling for the submit button
+ */
+button[type="submit"] {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background-color: #4a68f0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+/*
+ * Button hover effect
+ */
+button[type="submit"]:hover {
+    background-color: #6C8CFF;
+}
+
+/*
+ * IziToast Styling Overrides (To ensure visual consistency)
+ * The screenshot shows a successful (green) toast.
+ * iziToast handles the coloring automatically based on .success or .error
+ */
+.iziToast-wrapper {
+    /* Ensures toast appears correctly */
+    z-index: 999999;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: #4E75FF;
+}

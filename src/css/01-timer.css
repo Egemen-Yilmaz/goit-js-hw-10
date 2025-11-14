@@ -127,6 +127,6 @@ body {
     border: 1px solid black;
 }
 
-#datetime-picker:active {
+#datetime-picker:focus {
     border: 1px solid #4E75FF;
 }
